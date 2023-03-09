@@ -1,2 +1,6 @@
 #!/bin/bash
-echo "pwd"
+
+abs_path=$(cd "$(dirname "$0")"; pwd)
+
+echo "$abs_path"
+
