@@ -1,15 +1,17 @@
 #!/usr/bin/env bash
-# This script is displaying "Holberton School" 10 times
-n=0
+# displays Best School 10 times.
 
-while [ $n -le 9 ]
+COUNTER=1
+while [ $COUNTER -lt 11 ]
 do
-    if [[ "$n" == 3 ]]; then
+    if [ $COUNTER = 4 ]
+    then
         echo "bad luck"
-    elif [[ "$n" == 7 ]]; then
+    elif [ $COUNTER = 8 ]
+    then
         echo "good luck"
     else
-        echo "Holberton School"
+        echo "Best School"
     fi
-    ((n++))
+    ((COUNTER+=1)) || true
 done

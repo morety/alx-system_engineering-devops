@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # This script prints the files
-FILE=holbertonschool
+FILE=school
 if [[ -f "$FILE" ]] || [[ -d "$FILE" ]]
 then
     echo "holbertonschool file exists"

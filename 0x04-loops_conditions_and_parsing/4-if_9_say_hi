@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
-# This script is displaying "Holberton School" 10 times
-sent=0
+# displays Best School 10 times.
 
-while [ $sent -le 9 ]
+COUNTER=0
+while [ $COUNTER -lt 11 ]
 do
-    echo "Holberton School"
-    if [[ "$sent" == 8 ]]; then
+    if [ $COUNTER = 9 ]
+    then
         echo "Hi"
+    else
+        echo "Best School"
     fi
-    ((sent++))
+    ((COUNTER+=1)) || true
 done
